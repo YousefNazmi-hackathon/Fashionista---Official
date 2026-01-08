@@ -56,7 +56,7 @@ func suggestOutfit(for event: String) -> [ClothingItem] {
 
 ### 🎥 Demo Video
 
-*Record a screen capture showing scanning, wardrobe grid, and outfit suggestions.*
+[Placeholder]
 [![Fashionista Demo](assets/video-thumb.png)](assets/demo.mp4)
 
 ---
