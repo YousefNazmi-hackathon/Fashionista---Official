@@ -24,18 +24,17 @@ Grid-based wardrobe view
 // Saving items locally
 let data = try JSONEncoder().encode(items)
 UserDefaults.standard.set(data, forKey: "wardrobe")
-
 🤖 AI Stylist
 Occasion-based outfit suggestions
 Uses existing wardrobe data only
 func suggestOutfit(for event: String) -> [ClothingItem] {
     wardrobe.filter { $0.matches(event) }
 }
-
 📸 App Showcase
-[![Fashionista Logo](assets/Fashionista.png)]
+<p align="center">
+  <img src="assets/Fashionista.png" width="180">
+</p>
 🎥 Demo Video
-Record a screen capture showing scanning, wardrobe grid, and outfit suggestions.
 [![Fashionista Demo](assets/video-thumb.png)](assets/demo.mp4)
 
 ## 🛠️ Technical Stack
@@ -60,13 +59,14 @@ Record a screen capture showing scanning, wardrobe grid, and outfit suggestions.
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/Fashionista.git
+git clone https://github.com/YousefNazmi-hackathon/Fashionista---Official
+```
 Open the project in Xcode
 Add ClothingClassifier.mlmodel to the project
 Select a real iPhone as the target
 Build and run (Cmd + R)
 
-🛡️ Privacy
+##🛡️ Privacy
 All image processing runs on-device
 No cloud uploads
 No tracking
