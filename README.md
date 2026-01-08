@@ -16,6 +16,7 @@ Scan clothing, organize items, and get outfit suggestions based on the occasion.
 // CoreML classification (example)
 let model = try ClothingClassifier(configuration: .init())
 let prediction = try model.prediction(image: pixelBuffer)
+```swift
 📂 Digital Wardrobe
 Local persistence using JSON + UserDefaults
 Manual editing of category, name, and detected text
