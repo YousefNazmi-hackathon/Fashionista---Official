@@ -37,32 +37,41 @@ func suggestOutfit(for event: String) -> [ClothingItem] {
 🎥 Demo Video
 Record a screen capture showing scanning, wardrobe grid, and outfit suggestions.
 [![Fashionista Demo](assets/video-thumb.png)](assets/demo.mp4)
-🖼️ Screenshots
-Splash Screen    Wardrobe Grid    AI Stylist
-🛠️ Technical Stack
-Component    Technology
-UI    SwiftUI
-ML    CoreML
-Vision    OCR + Image Analysis
-Camera    AVFoundation
-Gallery    PhotosUI
-Storage    UserDefaults + JSON
-🚀 Getting Started
-Requirements
-Xcode 15+
-iOS 17.0+
-Physical iPhone (camera required)
-Installation
+
+## 🛠️ Technical Stack
+
+| Component | Technology |
+|---------|------------|
+| UI | SwiftUI |
+| ML | CoreML |
+| Vision | OCR + Image Analysis |
+| Camera | AVFoundation |
+| Gallery | PhotosUI |
+| Storage | UserDefaults + JSON |
+
+---
+
+## 🚀 Getting Started
+
+### Requirements
+- Xcode 15+
+- iOS 17.0+
+- Physical iPhone (camera required)
+
+### Installation
+```bash
 git clone https://github.com/yourusername/Fashionista.git
-Open in Xcode
-Add ClothingClassifier.mlmodel
-Select a real device
+Open the project in Xcode
+Add ClothingClassifier.mlmodel to the project
+Select a real iPhone as the target
 Build and run (Cmd + R)
+
 🛡️ Privacy
 All image processing runs on-device
 No cloud uploads
 No tracking
 Terms acceptance required before AI features
+
 📁 Repository Structure
 Fashionista/
 ├── assets/
@@ -73,4 +82,6 @@ Fashionista/
 ├── ClothingClassifier.mlmodel
 ├── Fashionista.xcodeproj
 └── README.md
+
+© License
 Copyright (c) 2026 Yousef Abdelsalam
