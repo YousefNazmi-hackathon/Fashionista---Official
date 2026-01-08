@@ -17,24 +17,27 @@ Scan clothing, organize items, and get outfit suggestions based on the occasion.
 let model = try ClothingClassifier(configuration: .init())
 let prediction = try model.prediction(image: pixelBuffer)
 ```
-📂 Digital Wardrobe
+
+###📂 Digital Wardrobe
 Local persistence using JSON + UserDefaults
 Manual editing of category, name, and detected text
 Grid-based wardrobe view
 // Saving items locally
 let data = try JSONEncoder().encode(items)
 UserDefaults.standard.set(data, forKey: "wardrobe")
-🤖 AI Stylist
+
+###🤖 AI Stylist
 Occasion-based outfit suggestions
 Uses existing wardrobe data only
 func suggestOutfit(for event: String) -> [ClothingItem] {
     wardrobe.filter { $0.matches(event) }
 }
-📸 App Showcase
+
+##📸 App Showcase
 <p align="center">
   <img src="assets/Fashionista.png" width="180">
 </p>
-🎥 Demo Video
+##🎥 Demo Video
 [![Fashionista Demo](assets/video-thumb.png)](assets/demo.mp4)
 
 ## 🛠️ Technical Stack
