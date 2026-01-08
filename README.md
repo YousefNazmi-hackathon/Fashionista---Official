@@ -16,7 +16,7 @@ Scan clothing, organize items, and get outfit suggestions based on the occasion.
 // CoreML classification (example)
 let model = try ClothingClassifier(configuration: .init())
 let prediction = try model.prediction(image: pixelBuffer)
-```swift
+```
 📂 Digital Wardrobe
 Local persistence using JSON + UserDefaults
 Manual editing of category, name, and detected text
@@ -24,13 +24,16 @@ Grid-based wardrobe view
 // Saving items locally
 let data = try JSONEncoder().encode(items)
 UserDefaults.standard.set(data, forKey: "wardrobe")
+
 🤖 AI Stylist
 Occasion-based outfit suggestions
 Uses existing wardrobe data only
 func suggestOutfit(for event: String) -> [ClothingItem] {
     wardrobe.filter { $0.matches(event) }
 }
+
 📸 App Showcase
+[![Fashionista Logo](assets/Fashionista.png)]
 🎥 Demo Video
 Record a screen capture showing scanning, wardrobe grid, and outfit suggestions.
 [![Fashionista Demo](assets/video-thumb.png)](assets/demo.mp4)
